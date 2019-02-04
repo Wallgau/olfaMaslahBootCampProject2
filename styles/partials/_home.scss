@@ -150,14 +150,16 @@ img {
 @media screen and (min-width: 930px) {
     .guyanaPart {
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
     .textVisitGuyana {
         text-align: left;
-        padding: 5% 0;
+        /* padding: 5% 0; */
         width: 200%;
     }
     .imageVisitGuyana {
-        padding: 10% 0;
+        padding: 0;
     }
 }
 
@@ -170,40 +172,19 @@ img {
     }
 }
 
-@media screen and (min-width: 1070px) and (max-width: 1120px) {
-    .textVisitGuyana {
-        padding: 7% 0;
-    }
-}
-
-@media screen and (min-width: 1120px)
-/* and (max-width: 1120px) */
-
-{
-    .textVisitGuyana {
-        padding: 10% 0;
-    }
+@media screen and (min-width: 1120px) {
     .textVisitGuyana p {
         @include fontSize(20);
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    .textVisitGuyana {
-        padding: 10% 0;
     }
     .textVisitGuyana h2 {
         margin: 0;
     }
     .textVisitGuyana p {
-        margin-top: 2rem;
+        margin-top: 1rem;
         width: 90%;
     }
-    .textVisitGuyana button {
-        margin-top: 2rem;
-    }
-    .imageVisitGuyana {
-        padding: 10% 0;
+    .imageVisitGuyana img {
+        box-shadow: -10px 10px $shadowBoxColor;
     }
     .locationAndPlans {
         display: flex;
@@ -213,12 +194,10 @@ img {
         flex-direction: column-reverse;
     }
     .locationAndPlans .hotelImage {
-        padding: 0 5rem 0 0;
-        margin-top: -3rem;
+        margin-top: -8rem;
     }
     .locationAndPlans .bay {
-        padding: 0 0 0 5rem;
-        margin-bottom: -3rem;
+        margin-bottom: -8rem;
     }
     .newLocation {
         text-align: right;
@@ -235,5 +214,8 @@ img {
     .planAhead p {
         padding-right: 10%;
         margin-bottom: 5%;
+    }
+    .bay img {
+        box-shadow: -10px 10px $shadowBoxColor;
     }
 }

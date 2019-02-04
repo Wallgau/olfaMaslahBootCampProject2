@@ -284,11 +284,11 @@ span {
   .titleHeaderGroup {
     text-align: center; } }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1000px) {
   header nav ul li {
     width: 20%; }
   header span {
-    padding-right: 21%; }
+    padding-right: 22%; }
   header .titleHeaderGroup {
     padding-top: 25%; } }
 
@@ -428,13 +428,19 @@ img {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    flex-direction: row; }
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .textVisitGuyana {
     text-align: left;
-    padding: 5% 0;
+    /* padding: 5% 0; */
     width: 200%; }
   .imageVisitGuyana {
-    padding: 10% 0; } }
+    padding: 0; } }
 
 @media screen and (min-width: 1000px) {
   .textVisitGuyana {
@@ -442,29 +448,18 @@ img {
   .textVisitGuyana p {
     margin: 0; } }
 
-@media screen and (min-width: 1070px) and (max-width: 1120px) {
-  .textVisitGuyana {
-    padding: 7% 0; } }
-
 @media screen and (min-width: 1120px) {
-  .textVisitGuyana {
-    padding: 10% 0; }
   .textVisitGuyana p {
     font-size: 20px;
-    font-size: 1rem; } }
-
-@media screen and (min-width: 1400px) {
-  .textVisitGuyana {
-    padding: 10% 0; }
+    font-size: 1rem; }
   .textVisitGuyana h2 {
     margin: 0; }
   .textVisitGuyana p {
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 90%; }
-  .textVisitGuyana button {
-    margin-top: 2rem; }
-  .imageVisitGuyana {
-    padding: 10% 0; }
+  .imageVisitGuyana img {
+    -webkit-box-shadow: -10px 10px #50e3c2;
+    box-shadow: -10px 10px #50e3c2; }
   .locationAndPlans {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -478,11 +473,9 @@ img {
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse; }
   .locationAndPlans .hotelImage {
-    padding: 0 5rem 0 0;
-    margin-top: -3rem; }
+    margin-top: -8rem; }
   .locationAndPlans .bay {
-    padding: 0 0 0 5rem;
-    margin-bottom: -3rem; }
+    margin-bottom: -8rem; }
   .newLocation {
     text-align: right;
     padding-right: 5rem; }
@@ -494,7 +487,10 @@ img {
     padding-left: 5rem; }
   .planAhead p {
     padding-right: 10%;
-    margin-bottom: 5%; } }
+    margin-bottom: 5%; }
+  .bay img {
+    -webkit-box-shadow: -10px 10px #50e3c2;
+    box-shadow: -10px 10px #50e3c2; } }
 
 .buttonStartEnd,
 .button {
@@ -504,20 +500,25 @@ img {
   font-family: "Playfair Display SC", serif;
   text-transform: uppercase; }
 
-@media screen and (min-width: 930px) {
-  .buttonStartEnd {
-    margin-top: 1rem; } }
+.buttonStartEnd {
+  margin-top: 0.5rem; }
 
+/* @media screen and (min-width: 930px) {
+    .buttonStartEnd {
+        margin-top: 1rem;
+    }
+}*/
 @media screen and (min-width: 1020px) {
   .buttonStartEnd {
     margin-top: 1.5rem; } }
 
-@media screen and (min-width: 1070px) and (max-width: 1120px) {
-  .buttonStartEnd {
-    margin-top: 1rem; } }
-
-@media screen and (min-width: 1400px) {
+/*@media screen and (min-width: 1070px) and (max-width: 1120px) {
+    .buttonStartEnd {
+        margin-top: 0;
+    }
+} */
+@media screen and (min-width: 1000px) {
   .locationAndPlans button {
-    margin-bottom: 5rem; } }
+    margin-bottom: 2rem; } }
 
 /*# sourceMappingURL=style.css.map */
