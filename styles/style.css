@@ -285,12 +285,28 @@ span {
     text-align: center; } }
 
 @media screen and (min-width: 1000px) {
+  header {
+    position: relative; }
   header nav ul li {
     width: 20%; }
+  .titleHeaderGroup {
+    position: relative;
+    z-index: 999; }
   header span {
     padding-right: 22%; }
   header .titleHeaderGroup {
-    padding-top: 25%; } }
+    padding-top: 25%;
+    z-index: 99; }
+  .headerSideImage {
+    position: absolute;
+    background-image: url("../images/headerBox.jpg");
+    background-size: cover;
+    width: 40%;
+    height: 70%;
+    left: 0;
+    top: 48%;
+    z-index: 9;
+    background-position: center; } }
 
 header {
   background-image: url("../images/headerBackgroundImage.jpg"); }
