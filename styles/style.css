@@ -1,0 +1,459 @@
+@charset "UTF-8";
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button,
+input {
+  line-height: normal; }
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+input[type=checkbox],
+input[type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body,
+figure {
+  margin: 0; }
+
+legend,
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*pour pouvoir préciser la font size exacte ensuite en faisant passer un argument*/
+body {
+  font-size: 125%;
+  min-width: 320px; }
+
+section {
+  padding: 10% 0; }
+
+.wrapper {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid hotpink; }
+
+h2 {
+  font-size: 35px;
+  font-size: 1.75rem;
+  font-family: "Lato", sans-serif;
+  color: #063974;
+  line-height: 58px; }
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 10%;
+  line-height: 32px; }
+
+body {
+  background: white; }
+
+img {
+  width: 100%;
+  display: block; }
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center; }
+  footer p {
+    margin: 0; }
+
+/*font-family: 'Lato', sans-serif;
+font-family: 'Playfair Display SC', serif;*/
+header {
+  color: white;
+  background-size: cover;
+  padding-bottom: 10%; }
+  header nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%; }
+    header nav p {
+      margin: 0 auto;
+      padding: 5%;
+      font-family: "Playfair Display SC", serif;
+      font-size: 20px;
+      font-size: 1rem; }
+    header nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: auto;
+      list-style: none;
+      text-decoration: none;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      padding: 0;
+      width: 100%; }
+      header nav ul li {
+        width: 25%;
+        text-align: center; }
+        header nav ul li a {
+          margin: 0 auto; }
+
+.titleHeaderGroup {
+  padding-top: 40%; }
+
+.homeTitle {
+  color: #063974;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-family: "Playfair Display SC", serif; }
+
+span {
+  color: #0c5f4c;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  margin-bottom: 0; }
+
+@media screen and (min-width: 600px) {
+  header nav ul {
+    width: 60%; } }
+
+@media screen and (min-width: 700px) {
+  .homeTitle {
+    font-size: 111.2px;
+    font-size: 5.56rem; }
+  header p {
+    font-size: 34.6px;
+    font-size: 1.73rem; } }
+
+@media screen and (min-width: 768px) {
+  header nav {
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%; }
+    header nav ul {
+      width: 80%;
+      margin-right: 0; }
+    header nav p {
+      margin: 0; }
+  span {
+    font-size: 62px;
+    font-size: 3.1rem; }
+  .titleHeaderGroup {
+    text-align: center; } }
+
+header {
+  background-image: url("../images/headerBackgroundImage.jpg"); }
+
+header span {
+  margin-bottom: 0;
+  text-align: center; }
+
+.guyanaPart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse; }
+
+.visitGuyana {
+  background-color: #fafffe; }
+
+.textEndStart {
+  text-align: center; }
+
+.imageVisitGuyana {
+  width: 100%;
+  padding: 10%; }
+
+/* .imageVisitGuyana  */
+img {
+  width: 100%;
+  -webkit-box-shadow: 5px 5px #50e3c2;
+  box-shadow: 5px 5px #50e3c2; }
+
+.gallery img {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+/* .gallery img {
+    width: 100%;
+} */
+.gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 100%;
+  grid-template-columns: 100%;
+  grid-gap: 1.5rem; }
+
+.logoBefore p {
+  padding-left: 3rem; }
+
+.logoBefore a:before {
+  font-family: "Font Awesome 5 Free";
+  padding: 0.5rem;
+  font-weight: 900;
+  font-size: 20px;
+  font-size: 1rem;
+  height: 5px;
+  width: 5px;
+  border: 1px solid #50e3c2;
+  background-color: #50e3c2;
+  color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 1rem; }
+
+.infoSection {
+  background-color: #fafffe; }
+  .infoSection .infoSection h2 {
+    color: #0c5f4c; }
+
+.beachHouse a:before {
+  content: "\f015"; }
+
+.blog a:before {
+  content: "\f15b";
+  padding: 0.5rem 0.6rem; }
+
+.community a:before {
+  content: "\f0c0";
+  padding: 0.5rem 0.4rem; }
+
+.getInTouch a:before {
+  content: "\f095"; }
+
+.bigGallery {
+  background: #d2f9f1; }
+
+.locationAndPlans {
+  background-color: #d2f9f1;
+  text-align: center; }
+  .locationAndPlans .bay,
+  .locationAndPlans .hotelImage {
+    padding: 10%; }
+
+.beachSection {
+  padding: 0; }
+
+@media screen and (min-width: 600px) {
+  .infoSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 3%;
+    margin: 0; }
+  img {
+    -webkit-box-shadow: 10px 10px #50e3c2;
+    box-shadow: 10px 10px #50e3c2; }
+  .logoBefore a:before {
+    margin-right: 1rem; } }
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto; }
+  /* .guyanaPart {
+        flex-direction: row;
+    } */
+  .imageVisitGuyana {
+    padding: 10%; }
+  /* .textEndStart {
+        text-align: left;
+    } */
+  .textEndStart p {
+    margin-bottom: 2%; }
+  .textEndStart h2 {
+    margin-bottom: 0%;
+    margin-top: 4%; } }
+
+@media screen and (min-width: 930px) {
+  .guyanaPart {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .textVisitGuyana {
+    text-align: left;
+    padding: 5% 0;
+    width: 200%; }
+  .imageVisitGuyana {
+    padding: 10% 0; } }
+
+@media screen and (min-width: 1000px) {
+  .textVisitGuyana {
+    width: auto; }
+  .textVisitGuyana p {
+    margin: 0; } }
+
+@media screen and (min-width: 1080px) {
+  .textVisitGuyana {
+    padding: 7% 0; }
+  .textEndStart p {
+    margin-top: 1rem; } }
+
+.buttonStartEnd,
+.button {
+  background-color: #063974;
+  color: white;
+  padding: 0.5rem;
+  font-family: "Playfair Display SC", serif;
+  text-transform: uppercase; }
+
+@media screen and (min-width: 930px) {
+  .buttonStartEnd {
+    margin-top: 1rem; } }
+
+@media screen and (min-width: 1020px) {
+  .buttonStartEnd {
+    margin-top: 1.5rem; } }
+
+/*# sourceMappingURL=style.css.map */

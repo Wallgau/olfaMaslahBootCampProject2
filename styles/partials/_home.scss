@@ -1,0 +1,180 @@
+header {
+    background-image: url('../images/headerBackgroundImage.jpg');
+}
+
+header span {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.guyanaPart {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.visitGuyana {
+    background-color: $blogColor;
+}
+
+.textEndStart {
+    text-align: center;
+}
+
+.imageVisitGuyana {
+    width: 100%;
+    padding: 10%;
+}
+
+
+/* .imageVisitGuyana  */
+
+img {
+    width: 100%;
+    box-shadow: 5px 5px $shadowBoxColor;
+}
+
+.gallery img {
+    box-shadow: none;
+}
+
+
+/* .gallery img {
+    width: 100%;
+} */
+
+.gallery {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 100%;
+    grid-gap: 1.5rem;
+}
+
+.logoBefore p {
+    padding-left: 3rem;
+}
+
+.logoBefore a:before {
+    font-family: "Font Awesome 5 Free";
+    padding: 0.5rem;
+    font-weight: 900;
+    @include fontSize(20);
+    height: 5px;
+    width: 5px;
+    border: 1px solid $shadowBoxColor;
+    background-color: $shadowBoxColor;
+    color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+.infoSection {
+    background-color: #fafffe;
+    .infoSection h2 {
+        color: $infoSectionColor;
+    }
+}
+
+.beachHouse a:before {
+    content: "\f015";
+}
+
+.blog a:before {
+    content: "\f15b";
+    padding: 0.5rem 0.6rem;
+}
+
+.community a:before {
+    content: "\f0c0";
+    padding: 0.5rem 0.4rem;
+}
+
+.getInTouch a:before {
+    content: "\f095";
+}
+
+.bigGallery {
+    background: #d2f9f1;
+}
+
+.locationAndPlans {
+    background-color: #d2f9f1;
+    text-align: center;
+    .bay,
+    .hotelImage {
+        padding: 10%;
+    }
+}
+
+.beachSection {
+    padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .infoSection {
+        display: flex;
+        padding: 0 3%;
+        margin: 0;
+    }
+    img {
+        box-shadow: 10px 10px $shadowBoxColor;
+    }
+    .logoBefore a:before {
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    /* .guyanaPart {
+        flex-direction: row;
+    } */
+    .imageVisitGuyana {
+        padding: 10%;
+    }
+    /* .textEndStart {
+        text-align: left;
+    } */
+    .textEndStart p {
+        margin-bottom: 2%;
+    }
+    .textEndStart h2 {
+        margin-bottom: 0%;
+        margin-top: 4%;
+    }
+}
+
+@media screen and (min-width: 930px) {
+    .guyanaPart {
+        flex-direction: row;
+    }
+    .textVisitGuyana {
+        text-align: left;
+        padding: 5% 0;
+        width: 200%;
+    }
+    .imageVisitGuyana {
+        padding: 10% 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .textVisitGuyana {
+        width: auto;
+    }
+    .textVisitGuyana p {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .textVisitGuyana {
+        padding: 7% 0;
+    }
+    .textEndStart p {
+        margin-top: 1rem;
+    }
+}

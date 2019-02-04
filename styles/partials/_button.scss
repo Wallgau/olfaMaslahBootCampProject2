@@ -1,0 +1,20 @@
+.buttonStartEnd,
+.button {
+    background-color: #063974;
+    color: white;
+    padding: 0.5rem;
+    font-family: $h1fontFamily;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 930px) {
+    .buttonStartEnd {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .buttonStartEnd {
+        margin-top: 1.5rem;
+    }
+}

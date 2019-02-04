@@ -1,0 +1,70 @@
+$blogColor:#fafffe;
+$shadowBoxColor:#50e3c2;
+$footerBackColor:#2c2c2c;
+$buttonColor:#063974;
+$titlecolor:#063974;
+$infoSectionColor:#0c5f4c;
+$h1fontFamily: 'Playfair Display SC',
+serif;
+$mostFontFamily: 'Lato',
+sans-serif;
+
+/*pour pouvoir préciser la font size exacte ensuite en faisant passer un argument*/
+
+body {
+    font-size: 125%;
+    min-width: 320px;
+}
+
+section {
+    padding: 10% 0;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid hotpink;
+}
+
+@mixin fontSize($sizeValue) {
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/20) * 1rem;
+}
+
+h2 {
+    @include fontSize(35);
+    font-family: $mostFontFamily;
+    color: $titlecolor;
+    line-height: 58px;
+}
+
+p {
+    font-family: $mostFontFamily;
+    @include fontSize(20);
+    letter-spacing: 2px;
+    margin-bottom: 10%;
+    line-height: 32px;
+}
+
+body {
+    background: white;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    p {
+        margin: 0;
+    }
+}
+
+
+/*font-family: 'Lato', sans-serif;
+font-family: 'Playfair Display SC', serif;*/
