@@ -18,3 +18,15 @@
         margin-top: 1.5rem;
     }
 }
+
+@media screen and (min-width: 1070px) and (max-width: 1120px) {
+    .buttonStartEnd {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .locationAndPlans button {
+        margin-bottom: 5rem;
+    }
+}

@@ -284,6 +284,14 @@ span {
   .titleHeaderGroup {
     text-align: center; } }
 
+@media screen and (min-width: 1400px) {
+  header nav ul li {
+    width: 20%; }
+  header span {
+    padding-right: 21%; }
+  header .titleHeaderGroup {
+    padding-top: 25%; } }
+
 header {
   background-image: url("../images/headerBackgroundImage.jpg"); }
 
@@ -434,11 +442,59 @@ img {
   .textVisitGuyana p {
     margin: 0; } }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1070px) and (max-width: 1120px) {
   .textVisitGuyana {
-    padding: 7% 0; }
-  .textEndStart p {
-    margin-top: 1rem; } }
+    padding: 7% 0; } }
+
+@media screen and (min-width: 1120px) {
+  .textVisitGuyana {
+    padding: 10% 0; }
+  .textVisitGuyana p {
+    font-size: 20px;
+    font-size: 1rem; } }
+
+@media screen and (min-width: 1400px) {
+  .textVisitGuyana {
+    padding: 10% 0; }
+  .textVisitGuyana h2 {
+    margin: 0; }
+  .textVisitGuyana p {
+    margin-top: 2rem;
+    width: 90%; }
+  .textVisitGuyana button {
+    margin-top: 2rem; }
+  .imageVisitGuyana {
+    padding: 10% 0; }
+  .locationAndPlans {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .plans {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+  .locationAndPlans .hotelImage {
+    padding: 0 5rem 0 0;
+    margin-top: -3rem; }
+  .locationAndPlans .bay {
+    padding: 0 0 0 5rem;
+    margin-bottom: -3rem; }
+  .newLocation {
+    text-align: right;
+    padding-right: 5rem; }
+  .newLocation p {
+    padding-left: 10%;
+    margin-bottom: 5%; }
+  .planAhead {
+    text-align: left;
+    padding-left: 5rem; }
+  .planAhead p {
+    padding-right: 10%;
+    margin-bottom: 5%; } }
 
 .buttonStartEnd,
 .button {
@@ -455,5 +511,13 @@ img {
 @media screen and (min-width: 1020px) {
   .buttonStartEnd {
     margin-top: 1.5rem; } }
+
+@media screen and (min-width: 1070px) and (max-width: 1120px) {
+  .buttonStartEnd {
+    margin-top: 1rem; } }
+
+@media screen and (min-width: 1400px) {
+  .locationAndPlans button {
+    margin-bottom: 5rem; } }
 
 /*# sourceMappingURL=style.css.map */
