@@ -1,0 +1,146 @@
+.blogDescription {
+    padding: 0;
+}
+
+.mainTextBlog p {
+    text-align: left;
+}
+
+.whiteHouse {
+    padding: 10%;
+    text-align: left
+}
+
+.mainTextBlog {
+    text-align: left;
+}
+
+.mainTextBlog h2 {
+    color: $infoSectionColor;
+    /*  letter-spacing: 3.8px; */
+}
+
+.mainTextBlog h3 {
+    color: $titlecolor;
+    font-family: $mostFontFamily;
+    font-weight: 300;
+    @include fontSize(20);
+    font-style: italic;
+    text-align: left;
+}
+
+.mainTextBlog span {
+    color: $titlecolor;
+    @include fontSize(20);
+}
+
+.commentsPart {
+    text-align: left;
+}
+
+.eachComment h3 {
+    color: $titlecolor;
+    font-family: $mostFontFamily;
+    font-weight: 400;
+    @include fontSize(20);
+    margin: 0 auto;
+}
+
+.imageUser {
+    padding: 10%;
+}
+
+.infoBonus {
+    padding-bottom: 15%;
+}
+
+.infoBonus h4 {
+    font-family: $mostFontFamily;
+    color: $titlecolor;
+}
+
+.whiteVillaBeach img {
+    box-shadow: none;
+}
+
+.ourMission p,
+.recentPosts ul li span {
+    font-family: $mostFontFamily;
+    font-weight: 400;
+    color: black;
+    @include fontSize(20);
+}
+
+.recentPosts ul {
+    color: $shadowBoxColor;
+}
+
+@media screen and (min-width: 800px) {
+    .comments {
+        width: 70%;
+    }
+    .eachComment {
+        display: flex;
+    }
+    .commentsPart img {
+        box-shadow: none;
+        padding-right: 3rem;
+    }
+    .imageUser {
+        padding: 0;
+    }
+    .titleAndComment {
+        width: 80%;
+    }
+    .infoBonus {
+        display: flex;
+        padding-bottom: 0;
+    }
+    .ourMission,
+    .recentPosts {
+        padding-left: 1rem;
+    }
+    .whiteHousePart {
+        width: 70%;
+        border-right: 3px solid $shadowBoxColor;
+        border-bottom: 3px solid $shadowBoxColor;
+        position: relative;
+        top: -4rem;
+    }
+    .whiteHouse {
+        padding: 0;
+        padding-right: 8px;
+        padding-bottom: 10px;
+        position: relative;
+        width: 110%;
+        top: -0.7rem;
+        left: -10%;
+    }
+    .blogDeescription .wrapper {
+        width: 100%;
+        margin: 0;
+    }
+    header.headerBlog {
+        padding-bottom: 2%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    main.mainBlog {
+        display: flex;
+    }
+    .infoBonus {
+        position: relative;
+        flex-direction: column;
+        width: 20%;
+        position: relative;
+    }
+    .whiteVillaBeach.wrapper {
+        width: 100%;
+    }
+    /* .ourMission,
+    .recentPosts {
+        padding-left: 0;
+        padding-right: 1rem;
+    } */
+}

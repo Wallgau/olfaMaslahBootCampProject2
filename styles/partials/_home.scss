@@ -1,4 +1,4 @@
-header {
+header.headerHome {
     background-image: url('../images/headerBackgroundImage.jpg');
 }
 
@@ -107,7 +107,9 @@ img {
 }
 
 .beachSection {
-    padding: 0;
+    padding: 20%;
+    background-image: url('../images/plageImage.jpg');
+    background-size: cover;
 }
 
 @media screen and (min-width: 600px) {
@@ -169,6 +171,9 @@ img {
     }
     .textVisitGuyana p {
         margin: 0;
+    }
+    .imageVisitGuyana {
+        padding-left: 2rem;
     }
 }
 

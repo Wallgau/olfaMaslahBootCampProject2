@@ -1,0 +1,44 @@
+input {
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+input::placeholder {
+    font-family: $mostFontFamily;
+    line-height: 29px;
+    letter-spacing: 1px;
+}
+
+input[name=name],
+input[name=email] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid $shadowBoxColor;
+}
+
+input[name=comment] {
+    border: 2px solid $shadowBoxColor;
+    padding-bottom: 30%;
+}
+
+.contactForm input#submitButton {
+    margin-bottom: 0
+}
+
+fieldset {
+    border: none;
+}
+
+@media screen and (width: 800px) {
+    .topForm {
+        display: flex;
+        justify-content: space-between;
+    }
+    input[name=name],
+    input[name=email] {
+        width: 45%;
+    }
+}

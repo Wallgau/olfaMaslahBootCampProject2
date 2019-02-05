@@ -12,63 +12,118 @@
 </head>
 
 <body>
-    <header>
-        <nav class="menuHeader">
-            <h3>BEACHSLAY'S</h3>
-            <ul>
-                <li>home</li>
-                <li>about</li>
-                <li>blog</li>
-                <li>contact</li>
-            </ul>
-        </nav>
-        <h1 class="globalTitle">Blog</h1>
+    <header class="headerBlog">
+        <div class="wrapper">
+            <nav class="menuHeader">
+                <p>BEACHSLAY'S</p>
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>blog</li>
+                    <li>contact</li>
+                </ul>
+            </nav>
+            <h1 class="blogTitle">Blog</h1>
+        </div>
     </header>
-    <main>
-        <section class="blogDescription shadowImage">
 
-            <div class="whiteHouse">
-                <img src="images/blogPostImage2.jpg" alt="">
+
+    <main class="mainBlog">
+        <container class="globalSideleft">
+            <section class="blogDescription shadowImage">
+
+
+
+                <div class="wrapper">
+
+
+                    <div class="whiteHousePart">
+
+                        <div class="whiteHouse">
+                            <img src="images/blogPostImage2.jpg" alt="">
+                        </div>
+                        <div class="mainTextBlog">
+                            <h2>Five days of ocean seas</h2>
+                            <h3 class="byBora">Monday January 21th, 2019 by <span>Bora</span></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia recusandae earum labore! Possimus voluptas ex facere veritatis praesentium, voluptates, quisquam nemo repellendus illo autem quas sunt laudantium itaque doloremque
+                                tempora.
+                            </p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae iure quos blanditiis tempore id non illum! Possimus iste, praesentium mollitia rem corporis quasi laborum cumque laboriosam necessitatibus ex repellat dolore
+                                dolorem, perspiciatis adipisci qui libero?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minus quidem dolores ut et nulla quis sapiente, quisquam nihil illum perferendis quos. Neque quis dicta ex, recusandae saepe ducimus aspernatur consectetur itaque,
+                                inventore molestias provident repudiandae enim mollitia repellat! Illum cupiditate dolore rerum eos nostrum.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non magni debitis ut consequuntur labore praesentium officiis maiores perferendis! Nisi sit praesentium aliquid?</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+            <cdiv class="leftSide">
+                <section class="comments">
+                    <div class="wrapper commentsPart">
+                        <h3>Comments:</h3>
+                        <div class="eachComment">
+                            <div class="imageUser">
+                                <img src="images/commentUserPicture1.jpg" alt="picture of the user who comments">
+                            </div>
+                            <div class="titleAndComment">
+                                <h3>Tuesday October 9th, 2019 by Reyansh</h3>
+                                <p>Fusce ipsum dolor sit amet consectetur adipisicing elit. Consequatur tenetur dolorum incidunt totam ab sed tempore veniam, maxime impedit corrupti. Amet, voluptate quod suscipit nulla officia modi ullam minus! Pariatur
+                                    enim ea odio incidunt minus maxime exercitationem vero.</p>
+                            </div>
+
+                        </div>
+                        <div class="eachComment">
+                            <div class="imageUser"><img src="images/commentUserPicture2.jpg" alt="picture of the user who comments"></div>
+                            <div class="titleAndComment">
+                                <h3>Wednesday October 10th, 2019 by Reyansh</h3>
+                                <p>Fusce ipsum dolor sit amet consectetur adipisicing elit. Consequatur tenetur dolorum incidunt totam ab sed tempore veniam, maxime impedit corrupti. Amet, voluptate quod suscipit nulla officia modi ullam minus! Pariatur
+                                    enim ea odio incidunt minus maxime exercitationem vero.</p>
+                            </div>
+
+                        </div>
+                        <fieldset>
+                            <form action="submit" class="contactForm">
+                                <div class="topForm">
+                                    <label for="name" class="visuallyhidden">Name</label>
+                                    <input type="text" name="name" id="name" placeholder="Name">
+                                    <label for="email" class="visuallyhidden">Name</label>
+                                    <input type="email" name="email" id="email" placeholder="Email address">
+                                </div>
+
+                                <label for="comment" class="visuallyhidden">Comment</label>
+                                <input type="text" name="comment" placeholder="Comment" id="comment">
+                                <label for="submitButton" class="visuallyhidden">Post Comment</label>
+                                <input type="submit" id="submitButton" name="submit" value="post comment">
+                            </form>
+                        </fieldset>
+                    </div>
+                </section>
+                </div>
+        </container>
+
+        <div class="infoBonus">
+            <div class="whiteVillaBeach wrapper">
+                <img src="images/sidebarImage.jpg" alt="white villa on the beach">
             </div>
-            <div class="mainTextBlog">
-                <h2>Five days of ocean seas</h2>
-                <p class="byBora">Monday January 21th, 2019 by Bora</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia recusandae earum labore! Possimus voluptas ex facere veritatis praesentium, voluptates, quisquam nemo repellendus illo autem quas sunt laudantium itaque doloremque tempora.
-                </p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae iure quos blanditiis tempore id non illum! Possimus iste, praesentium mollitia rem corporis quasi laborum cumque laboriosam necessitatibus ex repellat dolore dolorem,
-                    perspiciatis adipisci qui libero?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minus quidem dolores ut et nulla quis sapiente, quisquam nihil illum perferendis quos. Neque quis dicta ex, recusandae saepe ducimus aspernatur consectetur itaque, inventore
-                    molestias provident repudiandae enim mollitia repellat! Illum cupiditate dolore rerum eos nostrum.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non magni debitis ut consequuntur labore praesentium officiis maiores perferendis! Nisi sit praesentium aliquid?</p>
+            <div class="ourMission wrapper">
+                <h4>Our Mission</h4>
+                <p>Nam dapidus dolor sit amet consectetur adipisicing elit. Ab quia pariatur vel expedita et eligendi.</p>
             </div>
-        </section>
-        <section class="commentsPart">
-            <h3>Comments:</h3>
-            <div class="eachComment">
-                <img src="images/commentUserPicture1.jpg" alt="picture of the user who comments">
-                <p>Tuesday October 9th, 2019 by Reyansh</p>
-                <p>Fusce ipsum dolor sit amet consectetur adipisicing elit. Consequatur tenetur dolorum incidunt totam ab sed tempore veniam, maxime impedit corrupti. Amet, voluptate quod suscipit nulla officia modi ullam minus! Pariatur enim ea odio incidunt
-                    minus maxime exercitationem vero.</p>
+            <div class="recentPosts wrapper">
+                <h4>Recent Posts</h4>
+                <ul class="postList">
+                    <li><span>Donec Facilisis fortor ul</span></li>
+                    <li><span>Augue lacina at viverra</span></li>
+                    <li><span>Semper sed sapien metus</span></li>
+                    <li><span>Scelerisque mec pharetra</span></li>
+                </ul>
             </div>
-            <div class="eachComment">
-                <img src="images/commentUserPicture2.jpg" alt="picture of the user who comments">
-                <p>Wednesday October 10th, 2019 by Reyansh</p>
-                <p>Fusce ipsum dolor sit amet consectetur adipisicing elit. Consequatur tenetur dolorum incidunt totam ab sed tempore veniam, maxime impedit corrupti. Amet, voluptate quod suscipit nulla officia modi ullam minus! Pariatur enim ea odio incidunt
-                    minus maxime exercitationem vero.</p>
-            </div>
-            <fieldset>
-                <form action="submit" class="contactForm">
-                    <label for="name" class="visuallyhidden">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Name">
-                    <label for="email" class="visuallyhidden">Name</label>
-                    <input type="email" name="email" id="email" placeholder="Email address">
-                    <label for="comment" class="visuallyhidden">Comment</label>
-                    <input type="text" name="comment" placeholder="Comment" id="comment">
-                    <label for="submitButton" class="visuallyhidden">Post Comment</label>
-                    <input type="submit" id="submitButton" name="submit" value="post comment">
-                </form>
-            </fieldset>
-        </section>
+        </div>
+
     </main>
     <footer>
         <p>Copyright &copy 2019 HackerYou</p>

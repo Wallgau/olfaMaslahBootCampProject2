@@ -164,6 +164,19 @@ input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
 /*pour pouvoir préciser la font size exacte ensuite en faisant passer un argument*/
 body {
   font-size: 125%;
@@ -251,18 +264,35 @@ header {
   text-transform: uppercase;
   font-family: "Playfair Display SC", serif; }
 
+.blogTitle {
+  font-family: "Lato", sans-serif;
+  font-size: 87px;
+  font-size: 4.35rem;
+  letter-spacing: 9px;
+  line-height: 58px; }
+
 span {
   color: #0c5f4c;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   margin-bottom: 0; }
 
+header.headerBlog {
+  background-image: url("../images/blogHeaderImage1.jpg");
+  padding-bottom: 25%; }
+
+header.headerBlog h1 {
+  padding-top: 20%;
+  text-align: center;
+  font-weight: 500; }
+
 @media screen and (min-width: 600px) {
   header nav ul {
     width: 60%; } }
 
 @media screen and (min-width: 700px) {
-  .homeTitle {
+  .homeTitle,
+  header.headerBlog h1 {
     font-size: 111.2px;
     font-size: 5.56rem; }
   header p {
@@ -282,7 +312,10 @@ span {
     font-size: 62px;
     font-size: 3.1rem; }
   .titleHeaderGroup {
-    text-align: center; } }
+    text-align: center; }
+  header.headerBlog h1 {
+    text-align: left;
+    padding-bottom: 5%; } }
 
 @media screen and (min-width: 1000px) {
   header {
@@ -308,7 +341,138 @@ span {
     z-index: 9;
     background-position: center; } }
 
-header {
+.blogDescription {
+  padding: 0; }
+
+.mainTextBlog p {
+  text-align: left; }
+
+.whiteHouse {
+  padding: 10%;
+  text-align: left; }
+
+.mainTextBlog {
+  text-align: left; }
+
+.mainTextBlog h2 {
+  color: #0c5f4c;
+  /*  letter-spacing: 3.8px; */ }
+
+.mainTextBlog h3 {
+  color: #063974;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  font-size: 1rem;
+  font-style: italic;
+  text-align: left; }
+
+.mainTextBlog span {
+  color: #063974;
+  font-size: 20px;
+  font-size: 1rem; }
+
+.commentsPart {
+  text-align: left; }
+
+.eachComment h3 {
+  color: #063974;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-size: 1rem;
+  margin: 0 auto; }
+
+.imageUser {
+  padding: 10%; }
+
+.infoBonus {
+  padding-bottom: 15%; }
+
+.infoBonus h4 {
+  font-family: "Lato", sans-serif;
+  color: #063974; }
+
+.whiteVillaBeach img {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.ourMission p,
+.recentPosts ul li span {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 20px;
+  font-size: 1rem; }
+
+.recentPosts ul {
+  color: #50e3c2; }
+
+@media screen and (min-width: 800px) {
+  .comments {
+    width: 70%; }
+  .eachComment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .commentsPart img {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-right: 3rem; }
+  .imageUser {
+    padding: 0; }
+  .titleAndComment {
+    width: 80%; }
+  .infoBonus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 0; }
+  .ourMission,
+  .recentPosts {
+    padding-left: 1rem; }
+  .whiteHousePart {
+    width: 70%;
+    border-right: 3px solid #50e3c2;
+    border-bottom: 3px solid #50e3c2;
+    position: relative;
+    top: -4rem; }
+  .whiteHouse {
+    padding: 0;
+    padding-right: 8px;
+    padding-bottom: 10px;
+    position: relative;
+    width: 110%;
+    top: -0.7rem;
+    left: -10%; }
+  .blogDeescription .wrapper {
+    width: 100%;
+    margin: 0; }
+  header.headerBlog {
+    padding-bottom: 2%; } }
+
+@media screen and (min-width: 1300px) {
+  main.mainBlog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .infoBonus {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 20%;
+    position: relative; }
+  .whiteVillaBeach.wrapper {
+    width: 100%; }
+  /* .ourMission,
+    .recentPosts {
+        padding-left: 0;
+        padding-right: 1rem;
+    } */ }
+
+header.headerHome {
   background-image: url("../images/headerBackgroundImage.jpg"); }
 
 header span {
@@ -404,7 +568,9 @@ img {
     padding: 10%; }
 
 .beachSection {
-  padding: 0; }
+  padding: 20%;
+  background-image: url("../images/plageImage.jpg");
+  background-size: cover; }
 
 @media screen and (min-width: 600px) {
   .infoSection {
@@ -462,7 +628,9 @@ img {
   .textVisitGuyana {
     width: auto; }
   .textVisitGuyana p {
-    margin: 0; } }
+    margin: 0; }
+  .imageVisitGuyana {
+    padding-left: 2rem; } }
 
 @media screen and (min-width: 1120px) {
   .textVisitGuyana p {
@@ -508,8 +676,64 @@ img {
     -webkit-box-shadow: -10px 10px #50e3c2;
     box-shadow: -10px 10px #50e3c2; } }
 
+input {
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  padding-left: 1rem; }
+
+input::-webkit-input-placeholder {
+  font-family: "Lato", sans-serif;
+  line-height: 29px;
+  letter-spacing: 1px; }
+
+input:-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  line-height: 29px;
+  letter-spacing: 1px; }
+
+input::-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  line-height: 29px;
+  letter-spacing: 1px; }
+
+input::placeholder {
+  font-family: "Lato", sans-serif;
+  line-height: 29px;
+  letter-spacing: 1px; }
+
+input[name=name],
+input[name=email] {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #50e3c2; }
+
+input[name=comment] {
+  border: 2px solid #50e3c2;
+  padding-bottom: 30%; }
+
+.contactForm input#submitButton {
+  margin-bottom: 0; }
+
+fieldset {
+  border: none; }
+
+@media screen and (width: 800px) {
+  .topForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  input[name=name],
+  input[name=email] {
+    width: 45%; } }
+
 .buttonStartEnd,
-.button {
+.button,
+input[type=submit] {
   background-color: #063974;
   color: white;
   padding: 0.5rem;
