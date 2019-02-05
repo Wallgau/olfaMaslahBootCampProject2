@@ -1,5 +1,10 @@
 .blogDescription {
     padding: 0;
+    background-color: $blogColor;
+}
+
+.leftSide {
+    background-color: $blogColor;
 }
 
 .mainTextBlog p {
@@ -36,6 +41,7 @@
 
 .commentsPart {
     text-align: left;
+    background-color: $blogColor;
 }
 
 .eachComment h3 {
