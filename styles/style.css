@@ -264,12 +264,19 @@ header {
   text-transform: uppercase;
   font-family: "Playfair Display SC", serif; }
 
-.blogTitle {
+.blogTitle,
+.contactTitle {
   font-family: "Lato", sans-serif;
+  line-height: 58px; }
+
+.contactTitle {
+  padding-top: 15%;
+  text-align: center; }
+
+.blogTitle {
   font-size: 87px;
   font-size: 4.35rem;
-  letter-spacing: 9px;
-  line-height: 58px; }
+  letter-spacing: 9px; }
 
 span {
   color: #0c5f4c;
@@ -279,6 +286,10 @@ span {
 
 header.headerBlog {
   background-image: url("../images/blogHeaderImage1.jpg");
+  padding-bottom: 25%; }
+
+header.headerContact {
+  background-image: url("../images/contactImage1.jpg");
   padding-bottom: 25%; }
 
 header.headerBlog h1 {
@@ -297,7 +308,11 @@ header.headerBlog h1 {
     font-size: 5.56rem; }
   header p {
     font-size: 34.6px;
-    font-size: 1.73rem; } }
+    font-size: 1.73rem; }
+  .contactTitle {
+    font-size: 87px;
+    font-size: 4.35rem;
+    letter-spacing: 9px; } }
 
 @media screen and (min-width: 768px) {
   header nav {
@@ -455,7 +470,8 @@ header.headerBlog h1 {
   main.mainBlog {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    background-color: #fafffe; }
   .infoBonus {
     position: relative;
     -webkit-box-orient: vertical;
@@ -465,12 +481,13 @@ header.headerBlog h1 {
     width: 20%;
     position: relative; }
   .whiteVillaBeach.wrapper {
-    width: 100%; }
-  /* .ourMission,
-    .recentPosts {
-        padding-left: 0;
-        padding-right: 1rem;
-    } */ }
+    width: 100%;
+    margin-top: 25%; }
+  .ourMission,
+  .recentPosts {
+    margin: 0;
+    width: 100%;
+    background: white; } }
 
 header.headerHome {
   background-image: url("../images/headerBackgroundImage.jpg"); }
@@ -676,6 +693,65 @@ img {
     -webkit-box-shadow: -10px 10px #50e3c2;
     box-shadow: -10px 10px #50e3c2; } }
 
+.logoLink {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  padding: 0; }
+
+.logoLink li {
+  width: 25%; }
+
+.logoLink li a {
+  color: black; }
+
+.emailLink {
+  margin: 0; }
+
+.emailLink a {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+  font-family: "Lato", sans-serif; }
+
+fieldset {
+  background-color: white; }
+
+.textAddress p {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400; }
+
+.formPart,
+.address {
+  padding: 5% 0; }
+
+.formPart,
+.address {
+  background-color: #fafffe; }
+
+@media screen and (min-width: 768px) {
+  fieldset {
+    border: 2px solid white;
+    -webkit-box-shadow: 10px 10px #50e3c2;
+    box-shadow: 10px 10px #50e3c2;
+    position: relative;
+    top: -7rem; } }
+
+@media screen and (min-width: 1024px) {
+  .formPart {
+    width: 70%; }
+  .address {
+    width: 30%; }
+  .mainPart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  fieldset {
+    top: -15rem; } }
+
 input {
   margin-bottom: 3rem;
   padding-bottom: 1rem;
@@ -704,9 +780,7 @@ input::placeholder {
 
 input[name=name],
 input[name=email] {
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  border: none;
   border-bottom: 2px solid #50e3c2; }
 
 input[name=comment] {
@@ -714,12 +788,12 @@ input[name=comment] {
   padding-bottom: 30%; }
 
 .contactForm input#submitButton {
-  margin-bottom: 0; }
+  margin-bottom: 5%; }
 
 fieldset {
   border: none; }
 
-@media screen and (width: 800px) {
+@media screen and (min-width: 768px) {
   .topForm {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -729,7 +803,8 @@ fieldset {
     justify-content: space-between; }
   input[name=name],
   input[name=email] {
-    width: 45%; } }
+    width: 45%;
+    padding-top: 10%; } }
 
 .buttonStartEnd,
 .button,

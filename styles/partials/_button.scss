@@ -2,7 +2,7 @@
 .button,
 input[type=submit] {
     background-color: #063974;
-    color: white;
+    color: $lightColor;
     padding: 0.5rem;
     font-family: $h1fontFamily;
     text-transform: uppercase;

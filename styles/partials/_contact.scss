@@ -1,0 +1,69 @@
+        .logoLink {
+            list-style: none;
+            display: flex;
+            width: 50%;
+            padding: 0;
+        }
+        
+        .logoLink li {
+            width: 25%;
+        }
+        
+        .logoLink li a {
+            color: black;
+        }
+        
+        .emailLink {
+            margin: 0;
+        }
+        
+        .emailLink a {
+            text-decoration: none;
+            color: black;
+            font-weight: 900;
+            font-family: $mostFontFamily;
+        }
+        
+        fieldset {
+            background-color: $lightColor;
+        }
+        
+        .textAddress p {
+            margin: 0;
+            font-family: $mostFontFamily;
+            font-weight: 400;
+        }
+        
+        .formPart,
+        .address {
+            padding: 5% 0;
+        }
+        
+        .formPart,
+        .address {
+            background-color: $blogColor;
+        }
+        
+        @media screen and (min-width: 768px) {
+            fieldset {
+                border: 2px solid $lightColor;
+                box-shadow: 10px 10px $shadowBoxColor;
+                position: relative;
+                top: -7rem;
+            }
+        }
+        
+        @media screen and (min-width: 1024px) {
+            .formPart {
+                width: 70%;
+            }
+            .address {
+                width: 30%;
+            }
+            .mainPart {
+                display: flex;
+            }
+            fieldset {
+                top: -15rem;
+            }
+        }

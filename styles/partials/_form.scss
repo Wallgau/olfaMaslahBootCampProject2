@@ -13,9 +13,7 @@ input::placeholder {
 
 input[name=name],
 input[name=email] {
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border: none;
     border-bottom: 2px solid $shadowBoxColor;
 }
 
@@ -25,14 +23,14 @@ input[name=comment] {
 }
 
 .contactForm input#submitButton {
-    margin-bottom: 0
+    margin-bottom: 5%;
 }
 
 fieldset {
     border: none;
 }
 
-@media screen and (width: 800px) {
+@media screen and (min-width: 768px) {
     .topForm {
         display: flex;
         justify-content: space-between;
@@ -40,5 +38,6 @@ fieldset {
     input[name=name],
     input[name=email] {
         width: 45%;
+        padding-top: 10%;
     }
 }

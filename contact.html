@@ -13,60 +13,71 @@
 
 <body>
     <header class="headerContact">
-
-        <nav class="menuHeader">
-            <h3>BEACHSLAY'S</h3>
-            <ul>
-                <li>home</li>
-                <li>about</li>
-                <li>blog</li>
-                <li>contact</li>
-            </ul>
-        </nav>
-        <h1 class="globalTitle">Get in Touch</h1>
+        <div class="wrapper">
+            <nav class="menuHeader">
+                <p>BEACHSLAY'S</p>
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>blog</li>
+                    <li>contact</li>
+                </ul>
+            </nav>
+            <h1 class="contactTitle">Get in Touch</h1>
+        </div>
 
     </header>
     <main>
-        <section class="formPart">
-            <fieldset>
-                <form action="submit" class="contactForm">
-                    <label for="name" class="visuallyhidden">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Name">
-                    <label for="email" class="visuallyhidden">Name</label>
-                    <input type="email" name="email" id="email" placeholder="Email address">
-                    <label for="comment" class="visuallyhidden">Comment</label>
-                    <input type="text" name="comment" placeholder="Comment" id="comment">
-                    <label for="submitButton" class="visuallyhidden">Post Comment</label>
-                    <input type="submit" id="submitButton" name="submit" value="post comment">
-                </form>
-            </fieldset>
-        </section>
-        <aside class="article">
-            <nav class="logoLink">
-                <ul class="postList">
-                    <li>
-                        <a href=""></a>
-                    </li>
-                    <li>
-                        <a href=""></a>
-                    </li>
-                    <li>
-                        <a href=""></a>
-                    </li>
-                    <li>
-                        <a href=""></a>
-                    </li>
-                </ul>
-            </nav>
-            <p><a href="">info@email.com</a></p>
-            <p>123-456-7890</p>
-            <p>123 Queen Street West.</p>
-            <p>Unit 10</p>
-            <p>Toronto, Ontario</p>
-            <p>M5V2D5</p>
+        <div class="mainPart">
+            <section class="formPart">
+                <div class="wrapper">
+                    <fieldset>
+                        <form action="submit" class="contactForm">
+                            <div class="topForm">
+                                <label for="name" class="visuallyhidden">Name</label>
+                                <input type="text" name="name" id="name" placeholder="Name">
+                                <label for="email" class="visuallyhidden">Name</label>
+                                <input type="email" name="email" id="email" placeholder="Email address">
+                            </div>
 
-        </aside>
+                            <label for="comment" class="visuallyhidden">Comment</label>
+                            <input type="text" name="comment" placeholder="Comment" id="comment">
+                            <label for="submitButton" class="visuallyhidden">Post Comment</label>
+                            <input type="submit" id="submitButton" name="submit" value="post comment">
+                        </form>
+                    </fieldset>
+                </div>
+            </section>
+            <section class="address">
+                <div class="wrapper">
+                    <nav>
+                        <ul class="logoLink">
+                            <li>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-whatsapp"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p class="emailLink"><a href="">info@email.com</a></p>
+                    <div class="textAddress">
+                        <p>123-456-7890</p>
+                        <p>123 Queen Street West.</p>
+                        <p>Unit 10</p>
+                        <p>Toronto, Ontario</p>
+                        <p>M5V2D5</p>
+                    </div>
 
+            </section>
+            </div>
+        </div>
     </main>
     <footer>
         <p>Copyright &copy 2019 HackerYou</p>
