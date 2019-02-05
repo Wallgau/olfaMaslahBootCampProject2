@@ -237,23 +237,24 @@ header {
       font-family: "Playfair Display SC", serif;
       font-size: 20px;
       font-size: 1rem; }
-    header nav ul {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      margin: auto;
-      list-style: none;
-      text-decoration: none;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
-      padding: 0;
-      width: 100%; }
-      header nav ul li {
-        width: 25%;
-        text-align: center; }
-        header nav ul li a {
-          margin: 0 auto; }
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 0;
+  width: 100%; }
+  header nav ul li {
+    width: 25%;
+    text-align: center; }
+    header nav ul li a {
+      margin: 0 auto; }
 
 .titleHeaderGroup {
   padding-top: 40%; }
@@ -354,7 +355,9 @@ header.headerBlog h1 {
     left: 0;
     top: 48%;
     z-index: 9;
-    background-position: center; } }
+    background-position: center; }
+  .contactTitle {
+    text-align: left; } }
 
 .blogDescription {
   padding: 0;
@@ -754,7 +757,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  fieldset {
+  .contactfieldset {
     top: -15rem; } }
 
 input {
