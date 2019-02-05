@@ -24,7 +24,7 @@
             font-family: $mostFontFamily;
         }
         
-        fieldset {
+        .contactfieldset {
             background-color: $lightColor;
         }
         
@@ -45,7 +45,7 @@
         }
         
         @media screen and (min-width: 768px) {
-            fieldset {
+            .contactfieldset {
                 border: 2px solid $lightColor;
                 box-shadow: 10px 10px $shadowBoxColor;
                 position: relative;

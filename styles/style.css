@@ -716,7 +716,7 @@ img {
   font-weight: 900;
   font-family: "Lato", sans-serif; }
 
-fieldset {
+.contactfieldset {
   background-color: white; }
 
 .textAddress p {
@@ -733,7 +733,7 @@ fieldset {
   background-color: #fafffe; }
 
 @media screen and (min-width: 768px) {
-  fieldset {
+  .contactfieldset {
     border: 2px solid white;
     -webkit-box-shadow: 10px 10px #50e3c2;
     box-shadow: 10px 10px #50e3c2;
@@ -781,11 +781,18 @@ input::placeholder {
 input[name=name],
 input[name=email] {
   border: none;
-  border-bottom: 2px solid #50e3c2; }
+  border-bottom: 2px solid #50e3c2;
+  background-color: #fafffe; }
+
+.contactfieldset input[name=name],
+.contactfieldset input[name=email],
+.contactfieldset input[name=comment] {
+  background-color: white; }
 
 input[name=comment] {
   border: 2px solid #50e3c2;
-  padding-bottom: 30%; }
+  padding-bottom: 30%;
+  background-color: #fafffe; }
 
 .contactForm input#submitButton {
   margin-bottom: 5%; }

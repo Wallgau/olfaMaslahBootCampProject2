@@ -15,11 +15,19 @@ input[name=name],
 input[name=email] {
     border: none;
     border-bottom: 2px solid $shadowBoxColor;
+    background-color: $blogColor;
+}
+
+.contactfieldset input[name=name],
+.contactfieldset input[name=email],
+.contactfieldset input[name=comment] {
+    background-color: $lightColor;
 }
 
 input[name=comment] {
     border: 2px solid $shadowBoxColor;
     padding-bottom: 30%;
+    background-color: $blogColor;
 }
 
 .contactForm input#submitButton {
