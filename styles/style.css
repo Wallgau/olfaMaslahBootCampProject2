@@ -230,9 +230,7 @@ header {
   background-size: cover;
   padding-bottom: 10%; }
   header nav {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 100%;
     grid-template-columns: 100%; }
     header nav p {
       margin: 0 auto;
@@ -320,7 +318,6 @@ header.headerBlog h1 {
 
 @media screen and (min-width: 768px) {
   header nav {
-    -ms-grid-columns: 50% 50%;
     grid-template-columns: 50% 50%; }
     header nav ul {
       width: 80%;
@@ -540,11 +537,8 @@ img {
     width: 100%;
 } */
 .gallery {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  -ms-grid-columns: 100%;
   grid-template-columns: 100%;
   grid-gap: 1.5rem; }
 
@@ -617,9 +611,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .gallery {
-    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: auto;
     grid-template-rows: auto; }
   /* .guyanaPart {
         flex-direction: row;
@@ -710,7 +702,11 @@ img {
 
 @media screen and (min-width: 1350px) {
   .location.wrapper {
-    border-right: none; } }
+    border-right: none; }
+  .locationAndPlans {
+    padding: 0; }
+  .infoSection {
+    padding-bottom: 7%; } }
 
 .logoLink {
   list-style: none;
