@@ -1,160 +1,153 @@
-header {
-    color: $lightColor;
-    background-size: cover;
-    padding-bottom: 10%;
-    nav {
-        display: grid;
-        grid-template-columns: 100%;
-        p {
-            margin: 0 auto;
-            padding: 5%;
-            font-family: $h1fontFamily;
-            @include fontSize(20);
-        }
-    }
-}
-
-header nav ul {
-    display: flex;
-    margin: auto;
-    list-style: none;
-    text-decoration: none;
-    justify-content: flex-end;
-    padding: 0;
-    width: 100%;
-    li {
-        width: 25%;
-        text-align: center;
-        a {
-            margin: 0 auto;
-        }
-    }
-}
-
-.titleHeaderGroup {
-    padding-top: 40%;
-}
-
-.homeTitle {
-    color: $titleColor;
-    margin-top: 0;
-    text-transform: uppercase;
-    font-family: $h1fontFamily;
-}
-
-.blogTitle,
-.contactTitle {
-    font-family: $mostFontFamily;
-    line-height: 58px;
-}
-
-.contactTitle {
-    padding-top: 15%;
-    text-align: center;
-}
-
-.blogTitle {
-    @include fontSize(87);
-    letter-spacing: 9px;
-}
-
-span {
-    color: #0c5f4c;
-    font-family: $mostFontFamily;
-    font-weight: 700;
-    margin-bottom: 0;
-}
-
-header.headerBlog {
-    background-image: url('../images/blogHeaderImage1.jpg');
-    padding-bottom: 25%;
-}
-
-header.headerContact {
-    background-image: url('../images/contactImage1.jpg');
-    padding-bottom: 25%;
-}
-
-header.headerBlog h1 {
-    padding-top: 20%;
-    text-align: center;
-    font-weight: 500;
-}
-
-@media screen and (min-width: 600px) {
-    header nav ul {
-        width: 60%;
-    }
-}
-
-@media screen and (min-width: 700px) {
-    .homeTitle,
-    header.headerBlog h1 {
-        @include fontSize(111.2);
-    }
-    header p {
-        @include fontSize(34.6);
-    }
-    .contactTitle {
-        @include fontSize(87);
-        letter-spacing: 9px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    header nav {
-        grid-template-columns: 50% 50%;
-        ul {
-            width: 80%;
-            margin-right: 0;
-        }
-        p {
-            margin: 0;
-        }
-    }
-    span {
-        @include fontSize(62);
-    }
-    .titleHeaderGroup {
-        text-align: center;
-    }
-    header.headerBlog h1 {
-        text-align: left;
-        padding-bottom: 5%;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    header {
-        position: relative;
-    }
-    header nav ul li {
-        width: 20%;
-    }
-    .titleHeaderGroup {
-        position: relative;
-        z-index: 999;
-    }
-    header span {
-        padding-right: 22%;
-    }
-    header .titleHeaderGroup {
-        padding-top: 25%;
-        z-index: 99;
-    }
-    .headerSideImage {
-        position: absolute;
-        background-image: url("../images/headerBox.jpg");
-        background-size: cover;
-        width: 40%;
-        height: 70%;
-        left: 0;
-        top: 48%;
-        z-index: 9;
-        background-position: center;
-    }
-    .contactTitle {
-        text-align: left;
-        ;
-    }
-}
+                    header {
+                        color: $lightColor;
+                        background-size: cover;
+                        padding-bottom: 10%;
+                        nav {
+                            display: grid;
+                            grid-template-columns: 100%;
+                            p {
+                                margin: 0 auto;
+                                padding: 5%;
+                                font-family: $h1fontFamily;
+                                @include fontSize(20);
+                            }
+                        }
+                    }
+                    
+                    .titleHeaderGroup {
+                        padding-top: 40%;
+                    }
+                    
+                    .homeTitle {
+                        color: $titleColor;
+                        margin-top: 0;
+                        text-transform: uppercase;
+                        font-family: $h1fontFamily;
+                    }
+                    
+                    .blogTitle,
+                    .contactTitle {
+                        font-family: $mostFontFamily;
+                        line-height: 58px;
+                    }
+                    
+                    .contactTitle {
+                        padding-top: 15%;
+                        padding-bottom: 5%;
+                        text-align: center;
+                    }
+                    
+                    .blogTitle {
+                        @include fontSize(87);
+                        letter-spacing: 9px;
+                    }
+                    
+                    span {
+                        color: #0c5f4c;
+                        font-family: $mostFontFamily;
+                        font-weight: 700;
+                        margin-bottom: 0;
+                    }
+                    
+                    header.headerBlog {
+                        background-image: url('../images/blogHeaderImage1.jpg');
+                        padding-bottom: 25%;
+                    }
+                    
+                    header.headerContact {
+                        background-image: url('../images/contactImage1.jpg');
+                        padding-bottom: 13%;
+                    }
+                    
+                    header.headerBlog h1 {
+                        padding-top: 20%;
+                        text-align: center;
+                        font-weight: 500;
+                    }
+                    
+                    @media screen and (min-width: 600px) {
+                        header nav ul {
+                            width: 60%;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 700px) {
+                        .homeTitle,
+                        header.headerBlog h1 {
+                            @include fontSize(111.2);
+                        }
+                        header p {
+                            @include fontSize(34.6);
+                        }
+                        .contactTitle {
+                            @include fontSize(87);
+                            letter-spacing: 9px;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 768px) {
+                        header nav {
+                            grid-template-columns: 50% 50%;
+                            ul {
+                                width: 80%;
+                                margin-right: 0;
+                            }
+                            p {
+                                margin: 0;
+                            }
+                        }
+                        span {
+                            @include fontSize(62);
+                        }
+                        .titleHeaderGroup {
+                            text-align: center;
+                        }
+                        header.headerBlog h1 {
+                            text-align: left;
+                            padding-bottom: 5%;
+                        }
+                        header.headerContact {
+                            padding-bottom: 10%;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 1000px) {
+                        header {
+                            position: relative;
+                        }
+                        header nav ul li {
+                            width: 20%;
+                        }
+                        .titleHeaderGroup {
+                            position: relative;
+                            z-index: 999;
+                        }
+                        header span {
+                            padding-right: 22%;
+                        }
+                        header .titleHeaderGroup {
+                            padding-top: 25%;
+                            z-index: 99;
+                        }
+                        .headerSideImage {
+                            position: absolute;
+                            background-image: url("../images/headerBox.jpg");
+                            background-size: cover;
+                            width: 40%;
+                            height: 70%;
+                            left: 0;
+                            top: 48%;
+                            z-index: 9;
+                            background-position: center;
+                        }
+                        .contactTitle {
+                            text-align: left;
+                            padding-left: 5%;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 1200px) {
+                        header.headerContact {
+                            padding-bottom: 8%;
+                        }
+                    }

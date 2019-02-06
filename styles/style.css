@@ -225,20 +225,6 @@ footer {
 
 /*font-family: 'Lato', sans-serif;
 font-family: 'Playfair Display SC', serif;*/
-header {
-  color: white;
-  background-size: cover;
-  padding-bottom: 10%; }
-  header nav {
-    display: grid;
-    grid-template-columns: 100%; }
-    header nav p {
-      margin: 0 auto;
-      padding: 5%;
-      font-family: "Playfair Display SC", serif;
-      font-size: 20px;
-      font-size: 1rem; }
-
 header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,6 +243,20 @@ header nav ul {
     header nav ul li a {
       margin: 0 auto; }
 
+header {
+  color: white;
+  background-size: cover;
+  padding-bottom: 10%; }
+  header nav {
+    display: grid;
+    grid-template-columns: 100%; }
+    header nav p {
+      margin: 0 auto;
+      padding: 5%;
+      font-family: "Playfair Display SC", serif;
+      font-size: 20px;
+      font-size: 1rem; }
+
 .titleHeaderGroup {
   padding-top: 40%; }
 
@@ -273,6 +273,7 @@ header nav ul {
 
 .contactTitle {
   padding-top: 15%;
+  padding-bottom: 5%;
   text-align: center; }
 
 .blogTitle {
@@ -292,7 +293,7 @@ header.headerBlog {
 
 header.headerContact {
   background-image: url("../images/contactImage1.jpg");
-  padding-bottom: 25%; }
+  padding-bottom: 13%; }
 
 header.headerBlog h1 {
   padding-top: 20%;
@@ -331,7 +332,9 @@ header.headerBlog h1 {
     text-align: center; }
   header.headerBlog h1 {
     text-align: left;
-    padding-bottom: 5%; } }
+    padding-bottom: 5%; }
+  header.headerContact {
+    padding-bottom: 10%; } }
 
 @media screen and (min-width: 1000px) {
   header {
@@ -357,7 +360,12 @@ header.headerBlog h1 {
     z-index: 9;
     background-position: center; }
   .contactTitle {
-    text-align: left; } }
+    text-align: left;
+    padding-left: 5%; } }
+
+@media screen and (min-width: 1200px) {
+  header.headerContact {
+    padding-bottom: 8%; } }
 
 .blogDescription {
   padding: 0;
@@ -862,8 +870,6 @@ nav a:hover,
 nav a:focus {
   color: #50e3c2;
   font-weight: 900;
-  font-size: 40px;
-  font-size: 2rem;
   text-transform: uppercase; }
 
 .logoBefore a:hover {
@@ -896,5 +902,29 @@ input[type=submit]:focus {
 a:focus,
 input:focus {
   border: 3px solid #0c5f4c; }
+
+a {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+.buttonStartEnd,
+.button,
+input[type=submit] {
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease; }
+
+@media screen and (min-width: 800px) {
+  nav a:hover,
+  nav a:focus {
+    font-size: 30px;
+    font-size: 1.5rem; } }
+
+@media screen and (min-width: 1250px) {
+  nav a:hover,
+  nav a:focus {
+    font-size: 37px;
+    font-size: 1.85rem; } }
 
 /*# sourceMappingURL=style.css.map */
