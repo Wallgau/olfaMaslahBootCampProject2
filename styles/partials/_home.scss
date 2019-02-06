@@ -73,6 +73,9 @@ img {
     .infoSection h2 {
         color: $infoSectionColor;
     }
+    a {
+        color: $titleColor;
+    }
 }
 
 .beachHouse a:before {
@@ -222,5 +225,14 @@ img {
     }
     .bay img {
         box-shadow: -10px 10px $shadowBoxColor;
+    }
+    .location.wrapper {
+        border-right: 2px solid $titleColor;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .location.wrapper {
+        border-right: none;
     }
 }

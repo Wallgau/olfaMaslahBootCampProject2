@@ -15,12 +15,12 @@
     <header class="headerBlog">
         <div class="wrapper">
             <nav class="menuHeader">
-                <p>BEACHSLAY'S</p>
+                <p><a href="https://tenor.com/search/beach-funny-gifs" target="_blank">BEACHSLAY'S</a></p>
                 <ul>
-                    <li>home</li>
-                    <li>about</li>
-                    <li>blog</li>
-                    <li>contact</li>
+                    <li><a href="index.html" target="_blank">home</a></li>
+                    <li><a href="#about" target="_blank">about</a></li>
+                    <li><a href="#home">blog</a></li>
+                    <li><a href="contact.html" target="_blank">contact</a></li>
                 </ul>
             </nav>
             <h1 class="blogTitle">Blog</h1>
@@ -42,7 +42,7 @@
                         <div class="whiteHouse">
                             <img src="images/blogPostImage2.jpg" alt="" />
                         </div>
-                        <div class="mainTextBlog">
+                        <div class="mainTextBlog" id="#about">
                             <h2>Five days of ocean seas</h2>
                             <h3 class="byBora">Monday January 21th, 2019 by <span>Bora</span></h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia recusandae earum labore! Possimus voluptas ex facere veritatis praesentium, voluptates, quisquam nemo repellendus illo autem quas sunt laudantium itaque doloremque
@@ -90,9 +90,9 @@
                             <form action="submit" class="contactForm">
                                 <div class="topForm">
                                     <label for="name" class="visuallyhidden">Name</label>
-                                    <input type="text" name="name" id="name" placeholder="Name">
+                                    <input type="text" name="name" id="name" placeholder="Name" required>
                                     <label for="email" class="visuallyhidden">Name</label>
-                                    <input type="email" name="email" id="email" placeholder="Email address">
+                                    <input type="email" name="email" id="email" placeholder="Email address" required>
                                 </div>
 
                                 <label for="comment" class="visuallyhidden">Comment</label>
@@ -105,8 +105,8 @@
                 </section>
             </div>
         </div>
-
-        <div class="infoBonus">
+        <!--I didn't call it aside because is not aside in my responsive so I prefered to make clear for all screen size-->
+        <div class="infoBonus" id="#home">
             <div class="whiteVillaBeach wrapper">
                 <img src="images/sidebarImage.jpg" alt="white villa on the beach" />
             </div>

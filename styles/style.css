@@ -188,8 +188,7 @@ section {
 .wrapper {
   max-width: 1280px;
   width: 90%;
-  margin: 0 auto;
-  border: 1px solid hotpink; }
+  margin: 0 auto; }
 
 h2 {
   font-size: 35px;
@@ -205,6 +204,10 @@ p {
   letter-spacing: 2px;
   margin-bottom: 10%;
   line-height: 32px; }
+
+a {
+  text-decoration: none;
+  color: white; }
 
 body {
   background: white; }
@@ -567,6 +570,8 @@ img {
   background-color: #fafffe; }
   .infoSection .infoSection h2 {
     color: #0c5f4c; }
+  .infoSection a {
+    color: #063974; }
 
 .beachHouse a:before {
   content: "\f015"; }
@@ -699,7 +704,13 @@ img {
     margin-bottom: 5%; }
   .bay img {
     -webkit-box-shadow: -10px 10px #50e3c2;
-    box-shadow: -10px 10px #50e3c2; } }
+    box-shadow: -10px 10px #50e3c2; }
+  .location.wrapper {
+    border-right: 2px solid #063974; } }
+
+@media screen and (min-width: 1350px) {
+  .location.wrapper {
+    border-right: none; } }
 
 .logoLink {
   list-style: none;
@@ -850,5 +861,44 @@ input[type=submit] {
 @media screen and (min-width: 1000px) {
   .locationAndPlans button {
     margin-bottom: 2rem; } }
+
+nav a:hover,
+nav a:focus {
+  color: #50e3c2;
+  font-weight: 900;
+  font-size: 40px;
+  font-size: 2rem;
+  text-transform: uppercase; }
+
+.logoBefore a:hover {
+  color: #50e3c2;
+  font-weight: 900;
+  font-size: 40px;
+  font-size: 2rem; }
+
+.logoBefore a:hover:before {
+  font-weight: 900;
+  font-size: 40px;
+  font-size: 2rem;
+  background-color: #063974; }
+
+.buttonStartEnd:hover,
+.button:hover,
+input[type=submit]:hover {
+  background: #50e3c2; }
+
+.buttonStartEnd:active,
+.button:active,
+input[type=submit]:active {
+  background: #0c5f4c; }
+
+.buttonStartEnd:focus,
+.button:focus,
+input[type=submit]:focus {
+  background: #0c5f4c; }
+
+a:focus,
+input:focus {
+  border: 3px solid #0c5f4c; }
 
 /*# sourceMappingURL=style.css.map */

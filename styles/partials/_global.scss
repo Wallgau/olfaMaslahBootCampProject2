@@ -3,7 +3,7 @@ $lightColor:white;
 $shadowBoxColor:#50e3c2;
 $footerBackColor:#2c2c2c;
 $buttonColor:#063974;
-$titlecolor:#063974;
+$titleColor:#063974;
 $infoSectionColor:#0c5f4c;
 $h1fontFamily: 'Playfair Display SC',
 serif;
@@ -25,7 +25,6 @@ section {
     max-width: 1280px;
     width: 90%;
     margin: 0 auto;
-    border: 1px solid hotpink;
 }
 
 @mixin fontSize($sizeValue) {
@@ -36,7 +35,7 @@ section {
 h2 {
     @include fontSize(35);
     font-family: $mostFontFamily;
-    color: $titlecolor;
+    color: $titleColor;
     line-height: 58px;
 }
 
@@ -46,6 +45,11 @@ p {
     letter-spacing: 2px;
     margin-bottom: 10%;
     line-height: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: $lightColor;
 }
 
 body {

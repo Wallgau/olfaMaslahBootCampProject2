@@ -1,0 +1,42 @@
+nav a:hover,
+nav a:focus {
+    color: $shadowBoxColor;
+    font-weight: 900;
+    @include fontSize(40);
+    text-transform: uppercase;
+}
+
+.logoBefore a:hover {
+    color: $shadowBoxColor;
+    font-weight: 900;
+    @include fontSize(40);
+}
+
+.logoBefore a:hover:before {
+    font-weight: 900;
+    @include fontSize(40);
+    background-color: $titleColor;
+}
+
+.buttonStartEnd:hover,
+.button:hover,
+input[type=submit]:hover {
+    background: $shadowBoxColor;
+}
+
+.buttonStartEnd:active,
+.button:active,
+input[type=submit]:active {
+    background: $infoSectionColor;
+}
+
+.buttonStartEnd:focus,
+.button:focus,
+input[type=submit]:focus {
+    background: $infoSectionColor;
+}
+
+a:focus,
+input:focus {
+    border: 3px solid $infoSectionColor;
+}
